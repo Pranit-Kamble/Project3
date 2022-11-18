@@ -178,7 +178,7 @@ input[type=checkbox]{
     left: 550px;
     font-size: xx-large;
 }
-@media (max-width:600px) and (min-width:340px){
+@media (max-width:600px) and (min-width:320px){
 body{
     margin: 0px;
     min-height: 100vh;
@@ -198,8 +198,9 @@ body{
     width: 570px;
 }
 .item{
-    margin-left: 40px;
-    width: 300px;
+    font-size: 20px;
+    margin-left: 20px;
+    width: 260px;
 }
 .add{
     display: none;
