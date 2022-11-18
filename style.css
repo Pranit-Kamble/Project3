@@ -3,6 +3,7 @@ html,body{
     /* font-family: 'Inter', sans-serif; */
     overflow-x: hidden;
 }
+
 .container{
     padding: 120px;
     width: 84%;
@@ -177,7 +178,7 @@ input[type=checkbox]{
     left: 550px;
     font-size: xx-large;
 }
-@media (max-width:500px) and (min-width:320px){
+@media (max-width:600px) and (min-width:340px){
 body{
     margin: 0px;
     min-height: 100vh;
@@ -186,23 +187,22 @@ body{
 }
 .container{
     margin: 0px;
-    width: 260px;
+    width: 480px;
     flex-direction: column;
-    align-items: center;
     padding-left: 0px;
 }
 .item0{
     padding-left: 30px;
     margin: 0px;
     margin-right: 0px;
-    width: 350px;
+    width: 570px;
 }
 .item{
     margin-left: 40px;
     width: 300px;
 }
 .add{
-    visibility: hidden;
+    display: none;
 }
 .icon{
     top: 140px;
