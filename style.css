@@ -1,4 +1,5 @@
 html,body{
+    margin: 0px;
     max-width: 100%;
     /* font-family: 'Inter', sans-serif; */
     overflow-x: hidden;
@@ -22,7 +23,7 @@ html,body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    justify-content: flex-start;
 }
 
 .item{
@@ -36,7 +37,7 @@ html,body{
     margin: 20px;
     background-color: white;
     height: 360px;
-    width: 340px;
+    width: 320px;
 }
 button{
     background-color:#F7F7F7 ;
@@ -138,7 +139,7 @@ input{
     background-color: gray;
     height: 1px;
     position: absolute;
-    width: 350px;
+    width: 100%;
     top: 50px;
 }
 .f4{
@@ -148,7 +149,7 @@ input{
     top: 90px;
     left: 15px;
     height: 25px;
-    width: 300px;
+    width: 90%;
     color: #858585;;
     border: 2px solid #EDEDED;
 }
@@ -179,16 +180,17 @@ input{
     left: 550px;
     font-size: xx-large;
 }
-@media (max-width:600px) and (min-width:320px){
+@media (max-width:600px) and (min-width:310px){
 body{
     margin: 0px;
     min-height: 100vh;
     width: 100vw ;
     overflow-x: hidden;
 }
+*{
+    box-sizing: border-box;
+}
 .container{
-    margin: 0px;
-    width: 100vw;
     flex-direction: column;
     justify-content: center;
     padding-left: 0px;
@@ -199,11 +201,11 @@ body{
     margin-right: 0px;
     width: 570px;
 }
-/* .item{
+.item{
     font-size: 20px;
-    margin-left: 20px;
-    width: 260px;
-} */
+    /* margin-left: 20px; */
+    width: 280px;
+}
 .add{
     display: none;
 }
@@ -235,13 +237,6 @@ body{
     top: 150px;
     left: 150px;
 }
-.container2{
-    margin: 0px;
-    width: 250px;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
-}
 button{
     margin: 0px;
     padding: 0px;
@@ -251,7 +246,7 @@ button{
     .fixed{
         top: 200px;
         left: 200px;
-        width: 400px;
+        width: 500px;
         height: 300px;
     }
     .item2{
@@ -266,5 +261,8 @@ button{
     }
     .add{
         display: none;
+    }
+    .container{
+        justify-content: center;
     }
 }
