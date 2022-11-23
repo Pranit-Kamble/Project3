@@ -75,7 +75,7 @@ input:checked + label {
     text-decoration: line-through;
     color: #C2C2C2;
 }
-input[type=checkbox]{
+input{
     height: 35px;
     width: 35px;
 
