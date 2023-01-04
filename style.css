@@ -34,7 +34,7 @@ html,body{
     font-family: inter;
     line-height:70px;
     font-size: 24px;
-    margin: 20px;
+    margin: 35px;
     background-color: white;
     height: 360px;
     width: 320px;
@@ -49,12 +49,11 @@ hr{
     height: 0px;
 }
 .icon{
-    position: relative;
     /* background-color: gray; */
     text-decoration: none;
     position: absolute;
-    top: 140px;
-    right: 550px;
+    top: 20vh;
+    right: 33vw;
     font-size: 20px;
 }
 i{
@@ -87,16 +86,15 @@ input{
     box-shadow: 6px 6px 10px 10px  lightgrey;;
 }
 
-.icon2{
-    position: relative;
-    /* background-color: gray; */
-    text-decoration: none;
-    position: absolute;
-    top: 150px;
-    left: 800px;
-    font-size: 20px;
+
+.container2{
+    height: 88vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .item2{
+    margin-top: 40px;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
     /* font: normal normal medium 24px Inter; */
@@ -104,21 +102,21 @@ input{
     font-family: inter;
     line-height:70px;
     font-size: 24px;
-    margin-left: 400px; 
+    /* margin-left: 400px;  */
     background-color: white;
     height: 360px;
-    width: 450px;
+    width: 320px;
 }
 .blur{
     filter:brightness(50%) blur(5px) ;
 }
 .fixed{
     position: absolute;
-    top: 270px;
-    left: 500px;
+    top: 35vh;
+    left: 30vw;
     background-color: white;
     height: 200px;
-    width: 350px;
+    width: 40vw;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #EDEDED;
     border-radius: 10px;
@@ -176,8 +174,8 @@ input{
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 150px;
-    left: 550px;
+    top: 20vh;
+    left: 30vw;
     font-size: xx-large;
 }
 @media (max-width:600px) and (min-width:310px){
@@ -190,10 +188,20 @@ body{
 *{
     box-sizing: border-box;
 }
+.fixed{
+    left: 15vw;
+    width: 70vw;
+}
+.f5{
+    width: 70px;
+}
 .container{
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 100px;
     padding-left: 0px;
+    padding-right: 0px;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* padding-left: 0px; */
 }
 .item0{
     padding-left: 30px;
@@ -209,33 +217,10 @@ body{
 .add{
     display: none;
 }
-.icon{
-    top: 140px;
-    left: 160px;
-}
-.fixed{
-    top: 100px;
-    left: 10px;
-}
-.f5{
-    height: 50px;
-    width: 50px;
-}
-.item2{
-    margin: 0;
-    margin-right: 0px;
-    margin-left: 40px; 
-    width: 300px;
-}
+
 .back{
-    margin-right: 0px;
-    left: 50px;
+    
     color: #F7F7F7;
-}
-.icon2{
-    margin: 0px;
-    top: 150px;
-    left: 150px;
 }
 button{
     margin: 0px;
@@ -243,21 +228,10 @@ button{
 }
 }
 @media (max-width:1200px) and (min-width:600px){
-    .fixed{
-        top: 200px;
-        left: 200px;
-        width: 500px;
-        height: 300px;
-    }
-    .item2{
-        margin-left: 100px;
-    }
+
     .back{
         left: 250px;
         color: #F7F7F7;
-    }
-    .icon2{
-        left: 500px;
     }
     .add{
         display: none;
